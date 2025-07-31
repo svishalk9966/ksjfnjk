@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  header {
+    /* background-color: #1e1e2f; */
+    background-color: #1e1e2f;
+    /* background-image: url("https://www.transparenttextures.com/patterns/polonez-pattern.png"); */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+    color: #00ffd5;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  #home{
+    background-color: #403950;
+    /* background-image: url("https://www.transparenttextures.com/patterns/polonez-pattern.png"); */
+    /* background-color: #403950; */
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    min-height: calc(120vh - 70px);
+    width: 100%;
+    margin: 0;
+    gap: 40px;
+    box-sizing: border-box;
+}
+.container-Left{
+    width: 50%;
+    padding: 50px;
+    font-size: 25px;
+    margin-top: -50px;
+}
+.container-Left h2{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    color: #fff;
+}
+.container-Left p{
+      display: flex;
+      justify-content: flex-start;
+      font-size: 25px;
+      color: #fff;
+      margin-top: 5px;
+  }
+.btn-cv{
+  margin-top: 10px;
+  background-color: #403950;
+  color: #fff;
+  height: 35px;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size:medium;
+}
+.btn-cv:hover{
+    background-color: #0056b3;
+    color: #fff;
+    height: 35px;
+    width: 130px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #0056b3;
+    transition: all 0.5s;
+
+    }
+.container-Right{
+   margin-top: -50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+
+}
+.container-Right img{
+    height: 450px;
+    width: 450px;
+    border-radius: 50% ;
+    /* box-shadow: 0 0 10px #847655; */
+}
+.container-Right img:hover{
+    box-shadow: 0 0 20px #1e1e2f;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.skills-animation {
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.skill {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  opacity: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3b82f6;
+  animation: skillAnimation 9s infinite;
+}
+
+.skill:nth-child(1) {
+    animation-delay: 0s;
+}
+.skill:nth-child(2) {
+    animation-delay: 3s;
+}
+.skill:nth-child(3) {
+    animation-delay: 6s;
+}
+.container-Left button{
+  flex-direction: column-reverse;
+}
+.container-two{
+    height: 100px;
+    width: 100%;
+}       
+@keyframes skillAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+ }
+}
+
+  section:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  section:nth-child(odd) {
+    background-color: #eaeaea;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    color: #1e1e2f;
+  }
+  
+  /* Education */
+
+  .box-edu{
+    min-height: calc(120vh - 70px);
+    /* background-color: #767586; */
+    background-color: #767586;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  }
+  .box-edu .edu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: #767586;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+
+  }
+  .box-edu .edu-footer a{
+    text-decoration: none;
+  }
+  .box-edu .edu-footer a:hover{
+    color: #fff;
+  }
+  #education {
+    background-color: #767586;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    min-height: calc(120vh - 70px);
+    padding: 60px 20px;
+  }
+  .education-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #767586;
+    text-align: center;
+  }
+  
+  .education-section h2{
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .education-section h4{
+    display: flex;
+    color: #fff;
+  }
+  .education-section p{
+    display: flex;
+    color: #fff;
+  }
+  .education-section strong{
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    gap: 10px;
+  }
+  .education-section strong i{
+    padding: 3px 0px;
+  }
+
+ .edu-card2{
+ display: flex;
+ justify-content: flex-start;
+ margin-top: 20px;
+
+ }
+ .edu-card2 img{
+  border: dotted 2px;
+  border-radius: 3%;
+ }
+
+  .edu-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  /* Skills Section */
+  #skills{
+    /* background-color: #aea8ba;  */
+    background-color: #aea8ba;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    min-height: calc(112vh - 70px);
+
+  }
+  .skills-section h2 {
+    margin-top: 5px;
+    color: white;
+  }
+  .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  .skills-grid h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .skill-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    /* color: #1e1e2f; */
+    /* color: #212529; */
+    color:#343a40;
+  }
+  .skill-card p{
+    color: #6c757d;
+  }
+  /* Project Section */
+  #projects {
+    background-color: #886f8b;
+    /* background-color: #886f8b; */
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    padding: 60px 20px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  .project-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .project-card h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  .project-card p{
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  .project-card a{
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .project-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: #886f8b;
+  }
+  .project-footer a{
+    text-decoration: none;
+  }
+  .project-footer a:hover{
+    color: #fff;
+  }
+
+  /* Portfolio Section */
+
+  #portfolio {
+    /* background-color: #aea8ba; */
+    background-color: #aea8ba;
+    background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+    padding: 60px 20px;
+  }
+  .portfolio-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .portfolio-filter button{
+    background-color:#aea8ba ;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .portfolio-filter button:hover {
+    background-color: #333;
+    border-radius: 5px;
+    color: #00ffd5;
+    box-shadow: 1px 1px 15px #343a40;
+
+  }
+  .portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .portfolio-card{
+    /* background-color: #aea2ba; */
+    background-color: #aea2ba;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .card2{
+    height: 200px;
+  }
+  .portfolio-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  .portfolio-card p {
+    color: #6c757d;
+    margin-bottom: 8px;
+  }
+  .span-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .span-portfolio span{
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 3px 6px;
+    background-color: #aea2ba;
+  }
+  .span-portfolio span:hover{
+    background-color: #333;
+    border-radius: 7px;
+    color: #00ffd5;
+    box-shadow: 1px 1px 10px #343a40;
+  }
+  /* Contact section */
+  #contact{
+    /* background-color: #403950; */
+    /* background-color: #1e222d; */
+    background-color: #1e222d;
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+    min-height: calc(100vh - 70px);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+  }
+  #contact h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 20px;
+  }
+  #contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 8rem; */
+    padding: 20px;
+    gap: 2px;
+  }
+  #contact form input, #contact form textarea{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  #contact form label{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-right: 150px;
+  }
+  #contact form input, #contact form textarea{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  #contact form input:hover, #contact form textarea:hover,
+  #contact form input:focus, #contact form textarea:focus{
+    border: 1px solid #0056b3;
+    box-shadow: 0 0 15px #01050a;
+    transition: all 0.5s;
+  }
+  #contact form input::placeholder, #contact form textarea::placeholder{
+    /* color: #ccc; */
+    color: #999999;
+    /* background-color: #fff;
+    border: 1px solid #ccc; */
+  }
+  
+  #contact form button{
+    background-color: #403950;
+    color: #fff;
+    height: 35px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size:medium;
+  }
+  #contact form button:hover{
+    background-color: #0056b3;
+    color: #fff;
+    height: 35px;
+    width: 30%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #0056b3;
+    transition: all 0.5s;
+  }
+  #contact .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    font-size: 300%;
+  }
+  /* Footer */
+  .footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin:10px 0;
+
+    }
+}
